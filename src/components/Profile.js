@@ -19,7 +19,7 @@ const Profile = () => {
             <div className="column">
                 <figure className="image"><a
                     href='profile.png'><img
-                        src="myportfolio/profile.png" /></a>
+                        src="profile.png" /></a>
                 </figure>
             </div>
         </div>

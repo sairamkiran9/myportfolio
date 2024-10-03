@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return (
         <header>
-            <img className="page-cover-image banner" src="myportfolio/banner.png" />
+            <img className="page-cover-image banner" src="banner.png" />
             <div className="page-header-icon page-header-icon-with-cover">
                 <span className="icon">👋</span></div>
             <div className="page-title-content">
