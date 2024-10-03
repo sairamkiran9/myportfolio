@@ -69,7 +69,7 @@ const About = () => {
             dates: "May 2024 - Present",
             location: "Tallahasse, FL",
             summary: "",
-            icon: "https://www.notion.so/icons/bowl-food_yellow.svg",
+            icon: "",
             content: "",
         },
         {
@@ -78,7 +78,7 @@ const About = () => {
             dates: "Dec 2022 - May 2024",
             location: "Tallahasse, FL",
             summary: "",
-            icon: "https://www.notion.so/icons/bowl-food_yellow.svg",
+            icon: "",
             content: "",
         },
         {
@@ -87,7 +87,7 @@ const About = () => {
             dates: "Jul 2021 - Jul 2022",
             location: "Pune, India",
             summary: "",
-            icon: "https://www.notion.so/icons/bowl-food_yellow.svg",
+            icon: "",
             content: "",
         },
         {
@@ -96,7 +96,7 @@ const About = () => {
             dates: "Mar 2020 - Jun 2021",
             location: "Sriharikota, India",
             summary: "",
-            icon: "https://www.notion.so/icons/bowl-food_yellow.svg",
+            icon: "",
             content: "",
         }
     ];
@@ -108,7 +108,7 @@ const About = () => {
             dates: "2022 - 2024",
             location: "Tallahasse, FL",
             summary: "",
-            icon: "https://www.notion.so/icons/bowl-food_yellow.svg",
+            icon: "",
             content: "",
         },
         {
@@ -117,7 +117,7 @@ const About = () => {
             dates: "2017 - 2021",
             location: "Kerala, India",
             summary: "",
-            icon: "https://www.notion.so/icons/people_yellow.svg",
+            icon: "",
             content: "",
         },
     ];
