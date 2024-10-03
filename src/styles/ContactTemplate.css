@@ -5,7 +5,7 @@
 
 .contact-cards {
     display: flex;
-    /* justify-content: center; */
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -14,7 +14,6 @@
     border-radius: 8px;
     padding: 20px;
     min-width: 200px;
-    /* text-align: center; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -24,7 +23,6 @@
 
 .contact-icon {
     width: 18px;
-    /* height: 14px; */
 }
 
 .contact-card h3 {
@@ -35,7 +33,6 @@
 .contact-card p {
     color: rgba(120, 119, 116, 1);;
     font-size: 14px;
-    /* margin: 5px 0; */
 }
 
 @media (max-width: 650px) {

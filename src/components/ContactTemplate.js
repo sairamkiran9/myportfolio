@@ -19,11 +19,13 @@ const ContactTemplate = ({ contacts }) => {
                                 )}
                                 <h3>{contact.title || "Contact"}</h3>
                             </div>
-                            {contact.content &&
-                                <p>
-                                    <a href={contact.url}>{contact.content}</a>
-                                </p>
-                            }
+                            <div className="contact-card-content">
+                                {contact.content &&
+                                    <p>
+                                        <a href={contact.url}>{contact.content}</a>
+                                    </p>
+                                }
+                            </div>
                         </div>
                     ))
                 ) : (

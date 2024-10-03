@@ -80,7 +80,6 @@
     opacity: 0;
 }
 
-/* On hover, bring content up from bottom and increase opacity */
 .about-card:hover .about-card-content {
     bottom: 0;
     opacity: 1;
@@ -90,7 +89,10 @@
 @media (max-width: 650px) {
     .about-cards {
         flex-direction: column;
-        align-items: center;
+    }
+
+    .about-card {
+        width: 100%;
     }
 }
 
