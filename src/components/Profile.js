@@ -18,7 +18,7 @@ const Profile = () => {
             </div>
             <div className="column">
                 <figure className="image"><a
-                    href="profile.png"><img
+                    href={`${process.env.PUBLIC_URL}/profile.png`}><img
                         src="profile.png" /></a>
                 </figure>
             </div>

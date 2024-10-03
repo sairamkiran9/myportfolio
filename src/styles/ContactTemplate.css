@@ -38,7 +38,7 @@
     /* margin: 5px 0; */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
     .contact-cards {
         flex-direction: column;
     }
