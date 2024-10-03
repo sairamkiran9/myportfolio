@@ -15,7 +15,7 @@
     border-radius: 8px;
     padding: 20px;
     min-width: 200px;
-    width: calc(33.33% - 20px);
+    width: calc(50% - 20px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     overflow: hidden;
@@ -74,6 +74,8 @@
 
 .about-card:hover .skill{
     opacity: 0;
+    min-height: 150px;
+    transition: all 0.4s ease;
 }
 
 .about-card:hover .about-card-summary{

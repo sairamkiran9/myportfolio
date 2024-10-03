@@ -3,16 +3,18 @@ import React from 'react';
 const Header = () => {
     return (
         <header>
-            <img class="page-cover-image banner" src="banner.png" />
-            <div class="page-header-icon page-header-icon-with-cover">
-                <span class="icon">👋</span></div>
-            <h1 class="page-title">Hi, I’m Kiran Muppana</h1>
-            <p class="page-description"><em>
-                <span class="highlight-gray">
-                    I’m a Software
-                    Developer based in Florida 
-                </span>
-            </em></p>
+            <img className="page-cover-image banner" src="myportfolio/banner.png" />
+            <div className="page-header-icon page-header-icon-with-cover">
+                <span className="icon">👋</span></div>
+            <div className="page-title-content">
+                <h1 className="page-title">Hi, I’m Kiran Muppana</h1>
+                <p className="page-description"><em>
+                    <span className="highlight-gray">
+                        I’m a Software
+                        Developer based in Florida
+                    </span>
+                </em></p>
+            </div>
         </header>
     );
 };

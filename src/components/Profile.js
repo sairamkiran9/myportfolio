@@ -18,8 +18,8 @@ const Profile = () => {
             </div>
             <div className="column">
                 <figure className="image"><a
-                    href={`${process.env.PUBLIC_URL}/profile.png`}><img
-                        src="profile.png" /></a>
+                    href='profile.png'><img
+                        src="myportfolio/profile.png" /></a>
                 </figure>
             </div>
         </div>

@@ -5,7 +5,7 @@ import More from "./More";
 
 const Content = () => {
     return (
-        <body>
+        <body className="container-body">
             <Profile />
             <About />
             <More />
