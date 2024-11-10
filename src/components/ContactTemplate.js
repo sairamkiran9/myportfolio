@@ -8,8 +8,12 @@ const ContactTemplate = ({ contacts }) => {
             <div className="contact-cards">
                 {contacts && contacts.length > 0 ? (
                     contacts.map((contact, index) => (
-                        <div className="contact-card" key={index}>
-                            <div className="contact-card-title">
+                        <button
+                            key={index}
+                            className="contact-card"
+                            onClick={() => (window.location.href = contact.url)}
+                        >
+                            <div className="contact-card-content">
                                 {contact.icon && (
                                     <img
                                         className="contact-icon"
@@ -17,16 +21,11 @@ const ContactTemplate = ({ contacts }) => {
                                         alt={`${contact.title} icon`}
                                     />
                                 )}
-                                <h3>{contact.title || "Contact"}</h3>
+                                {contact.title && (
+                                    <a href={contact.url}>{contact.title}</a>
+                                )}
                             </div>
-                            <div className="contact-card-content">
-                                {contact.content &&
-                                    <p>
-                                        <a href={contact.url}>{contact.content}</a>
-                                    </p>
-                                }
-                            </div>
-                        </div>
+                        </button>
                     ))
                 ) : (
                     <p>No contacts available</p>

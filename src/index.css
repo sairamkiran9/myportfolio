@@ -30,6 +30,10 @@ a.visited {
     text-decoration: underline;
 }
 
+a {
+    text-decoration: none;
+}
+
 .pdf-relative-link-path {
     font-size: 80%;
     color: #444;
@@ -117,6 +121,7 @@ img {
 .column-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .column {
@@ -124,14 +129,21 @@ img {
 }
 
 .column:first-child {
+    margin: 0 0 0 2em;
     padding-left: 0;
 }
 
 .column:last-child {
+    margin: 0 2em 0 0;
     padding-right: 0;
 }
 
-.highlight-gray{
+.intro {
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.highlight-gray {
     color: gray;
 }
 
@@ -165,7 +177,7 @@ img {
 }
 
 .page-title-content {
-    margin: 0 4em;
+    margin: 0 6em;
 }
 
 input[type="checkbox"] {
@@ -192,17 +204,17 @@ p {
 }
 
 @media (max-width: 768px) {
-    .intro{
+    .intro {
         display: none;
     }
-    
+
     .container-body {
         margin: 5px;
     }
 
     .page-title-content {
         margin: 2px;
-    }   
+    }
 
     .column {
         padding: 0;
