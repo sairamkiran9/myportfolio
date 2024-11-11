@@ -207,7 +207,7 @@ p {
     .intro {
         display: none;
     }
-
+    
     .container-body {
         margin: 5px;
     }
@@ -216,7 +216,26 @@ p {
         margin: 2px;
     }
 
-    .column {
+    .column:first-child {
+        margin: 0;
         padding: 0;
     }
+    
+    .column:last-child {
+        margin: 0;
+        padding: 0;
+    }
+
+    .image {
+        margin: 0;
+        max-width: 50%;
+    }
+
+    .profile-fig{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
 }
