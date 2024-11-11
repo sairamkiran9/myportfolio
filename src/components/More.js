@@ -1,20 +1,34 @@
 import React, { useState } from "react";
 import ContactTemplate from "./ContactTemplate";
+import { faBowlFood, faEnvelope, faFile, faHatCowboy } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 import '../styles/More.css';  
 
 const More = () => {
     const contacts = [
         {
+            title: "Resume",
+            url: "https://www.linkedin.com/in/kiran-muppana/",
+            icon: faFile,
+            content: "https://www.linkedin.com/in/kiran-muppana/",
+        },
+        {
             title: "Email",
             url: "mailto:kiranmuppana36@gmail.com",
-            icon: "https://www.notion.so/icons/mail_yellow.svg",
+            icon: faEnvelope,
             content: "kiranmuppana36@gmail.com",
         },
         {
             title: "LinkedIn",
             url: "https://www.linkedin.com/in/kiran-muppana/",
-            icon: "https://www.notion.so/icons/user_yellow.svg",
+            icon: faLinkedinIn,
             content: "https://www.linkedin.com/in/kiran-muppana/",
+        },
+        {
+            title: "GitHub",
+            url: "https://github.com/sairamkiran9",
+            icon: faGithub,
+            content: "https://github.com/sairamkiran9",
         },
     ];
 
@@ -22,13 +36,13 @@ const More = () => {
         {
             title: "Cooking",
             url: "",
-            icon: "https://www.notion.so/icons/apron_yellow.svg",
+            icon: faBowlFood,
             content: "I enjoy experimenting with different recipes.",
         },
         {
             title: "Dancing",
             url: "",
-            icon: "https://www.notion.so/icons/people_yellow.svg",
+            icon: faHatCowboy,
             content: "Dancing helps me stay active and creative.",
         },
     ];

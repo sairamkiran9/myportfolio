@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../styles/ContactTemplate.css'
 
 const ContactTemplate = ({ contacts }) => {
@@ -15,11 +16,7 @@ const ContactTemplate = ({ contacts }) => {
                         >
                             <div className="contact-card-content">
                                 {contact.icon && (
-                                    <img
-                                        className="contact-icon"
-                                        src={contact.icon}
-                                        alt={`${contact.title} icon`}
-                                    />
+                                    <FontAwesomeIcon className='contact-icon' icon={contact.icon} size='lg' style={{color: "#9f6b53",}} />
                                 )}
                                 {contact.title && (
                                     <a href={contact.url}>{contact.title}</a>

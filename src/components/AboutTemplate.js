@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/AboutTemplate.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const AboutTemplate = ({ data }) => {
     return (
@@ -8,7 +9,7 @@ const AboutTemplate = ({ data }) => {
                 {data.map((item, index) => (
                     <div className="about-card" key={index}>
                         <div className={`about-card-title ${item.class}`}>
-                            { item.icon && <img className="about-icon" src={item.icon} alt="Icon" />}
+                            { item.icon && <FontAwesomeIcon className='about-icon' icon={item.icon} size='lg' style={{color: "#9f6b53",}} />}
                             <h3>{item.title}</h3>
                         </div>
                         <p className="about-card-subtitle">{item.subtitle}</p>
