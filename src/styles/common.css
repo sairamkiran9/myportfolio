@@ -1,0 +1,24 @@
+/* Common styles shared across components */
+.section {
+  @apply py-20 bg-gray-900;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.section-title {
+  @apply text-4xl font-bold text-center text-white mb-16;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600;
+}
+
+.card-base {
+  @apply bg-gray-800 rounded-lg p-6;
+}
+
+.hover-scale {
+  @apply transition-transform hover:scale-105;
+}

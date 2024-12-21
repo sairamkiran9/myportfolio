@@ -1,0 +1,32 @@
+/* Experience section specific styles */
+.timeline {
+  @apply relative space-y-8;
+}
+
+.timeline-line {
+  @apply absolute inset-0 ml-5 -translate-x-px md:mx-auto md:translate-x-0 h-full w-0.5 bg-gradient-to-b from-transparent via-gray-700 to-transparent;
+}
+
+.experience-card {
+  @apply bg-gray-800 rounded-lg p-6 relative;
+}
+
+.timeline-dot {
+  @apply absolute top-6 -left-3 w-6 h-6 bg-blue-500 rounded-full border-4 border-gray-900;
+}
+
+.card-title {
+  @apply text-xl font-bold text-white mb-1;
+}
+
+.card-company {
+  @apply text-blue-400 mb-2;
+}
+
+.card-period {
+  @apply text-gray-400 text-sm mb-4;
+}
+
+.card-description {
+  @apply list-disc list-inside text-gray-300 space-y-2;
+}
