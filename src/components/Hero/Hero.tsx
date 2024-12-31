@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronsDown, Github, Linkedin, Mail, } from 'lucide-react';
 import BackgroundAnimation from './BackgroundAnimation';
 import SocialLink from './SocialLink';
 import styles from './Hero.module.css';
@@ -44,11 +44,11 @@ export default function Hero() {
           </motion.div>
 
           <motion.button
-            className={styles['cta-button']}
+            // className={styles['cta-button']}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            View My Work
+            <SocialLink href="" icon={<ChevronsDown />} />
           </motion.button>
         </motion.div>
       </div>
