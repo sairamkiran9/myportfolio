@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { ChevronsDown, Github, Linkedin, Mail, } from 'lucide-react';
-import BackgroundAnimation from './BackgroundAnimation';
 import SocialLink from './SocialLink';
 import styles from './Hero.module.css';
 import ParticleBackground from './ParticleBackground';
@@ -8,8 +7,6 @@ import ParticleBackground from './ParticleBackground';
 export default function Hero() {
   return (
     <section className={styles['hero-section']}>
-      {/* <BackgroundAnimation /> */}
-      <ParticleBackground />
       <div className={styles['hero-content']}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,7 +57,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
       </div>
-      
+      <ParticleBackground />
     </section>
   );
 }
