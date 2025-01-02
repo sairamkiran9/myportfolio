@@ -6,7 +6,7 @@ const projects = [
   {
     title: "CancerKG.ORG",
     description: "A knowledge graph based search engine with 13M+ nodes.",
-    image: "myportfolio/assets/cancer.png",
+    image: "assets/cancer.png",
     tech: ["Python", "React", "MongoDB", "LLMs", "AWS"],
     github: "https://github.com/sairamkiran9",
     live: "http://cancerkg.org/"
