@@ -6,12 +6,12 @@ export default function About() {
     {
       icon: <Terminal className="w-6 h-6" />,
       title: "Backend Development",
-      description: "Proficient in Python (Django, Flask) and NextJS"
+      description: "Architected multiple RESTFUL API services using Python (Django, Flask) and NextJS"
     },
     {
       icon: <Codepen className="w-6 h-6 bd-organe" />,
       title: "Frontend Development",
-      description: "Expert in React, Javascript, TypeScript, and modern CSS frameworks"
+      description: "Expert in React, JavaScript, TypeScript, and modern CSS frameworks"
     },
     {
       icon: <Code2 className="w-6 h-6" />,

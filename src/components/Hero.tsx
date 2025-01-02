@@ -43,7 +43,7 @@ export default function Hero() {
             className="px-8 py-3 bg-blue-600 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-          >cvfaaf
+          >
             <SocialLink href="" icon={<ChevronsDown />} />
           </motion.button>
         </motion.div>
