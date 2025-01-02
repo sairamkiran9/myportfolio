@@ -4,7 +4,7 @@ import styles from '../styles/Contact.module.css';
 
 export default function Contact() {
   return (
-    <section className="section">
+    <section className="section py-20">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

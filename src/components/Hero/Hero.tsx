@@ -3,11 +3,13 @@ import { ChevronsDown, Github, Linkedin, Mail, } from 'lucide-react';
 import BackgroundAnimation from './BackgroundAnimation';
 import SocialLink from './SocialLink';
 import styles from './Hero.module.css';
+import ParticleBackground from './ParticleBackground';
 
 export default function Hero() {
   return (
     <section className={styles['hero-section']}>
-      <BackgroundAnimation />
+      {/* <BackgroundAnimation /> */}
+      
       <div className={styles['hero-content']}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,14 +44,6 @@ export default function Hero() {
             <SocialLink href="https://www.linkedin.com/in/kiran-muppana/" icon={<Linkedin />} />
             <SocialLink href="mailto:kiranmuppana36@gmail.com" icon={<Mail />} />
           </motion.div>
-
-          {/* <motion.button
-            // className={styles['cta-button']}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <SocialLink href="" icon={<ChevronsDown />} />
-          </motion.button> */}
           
           <motion.div
             className={styles['scroll-indicator']}
@@ -66,6 +60,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
       </div>
+      <ParticleBackground />
     </section>
   );
 }

@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray">
       <Hero />
       <About />
       {/* <Skills /> */}

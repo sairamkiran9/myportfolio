@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ExternalLink, ChevronsDown} from 'lucide-react';
+import ParticleBackground from './Hero/ParticleBackground';
 
 export default function Hero() {
   return (
