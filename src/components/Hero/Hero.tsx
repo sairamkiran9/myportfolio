@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className={styles['hero-section']}>
       {/* <BackgroundAnimation /> */}
-      
+      <ParticleBackground />
       <div className={styles['hero-content']}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,7 +60,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
       </div>
-      <ParticleBackground />
+      
     </section>
   );
 }
