@@ -4,7 +4,7 @@
 }
 
 .hero-content {
-  @apply max-w-6xl mx-auto relative z-10;
+  @apply max-w-6xl mx-auto relative z-20;
 }
 
 .hero-title {
@@ -12,11 +12,11 @@
 }
 
 .hero-subtitle {
-  @apply text-2xl md:text-3xl text-gray-300 mb-8;
+  @apply text-2xl md:text-3xl text-gray-300 my-4;
 }
 
 .social-links {
-  @apply flex justify-center gap-6 mb-12;
+  @apply flex justify-center gap-6 mb-0;
 }
 
 .cta-button {
