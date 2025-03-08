@@ -46,7 +46,7 @@ export default function About() {
         >
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-          I'm a problem solver and am passionate about software engineering and distributed applications. With over 3 years of experience in full-stack development and distributed services, I bring ideas to life
+          I'm a problem solver, passionate about software engineering and distributed applications. With over 3 years of experience in full-stack development and distributed services, I bring ideas to life
           </p>
         </motion.div>
 

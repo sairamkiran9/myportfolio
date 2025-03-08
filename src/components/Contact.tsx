@@ -4,8 +4,8 @@ import styles from '../styles/Contact.module.css';
 
 export default function Contact() {
   return (
-    <section className="section py-20">
-      <div className="container">
+    <section className="py-20 bg-gray-900">
+      <div className="max-w-6xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

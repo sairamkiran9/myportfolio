@@ -25,7 +25,7 @@ export default function ParticleBackground() {
   }, []);
 
   return (
-    <div className="fixed inset-0 -z-10 bg-gradient-to-b from-gray-900 to-gray-800">
+    <div className="relative w-full h-full bg-gradient-to-b from-gray-950 to-gray-900">
       {particles.map((particle) => (
         <motion.div
           key={particle.id}

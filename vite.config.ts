@@ -7,5 +7,13 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/myportfolio/',
+  base: process.env.NODE_ENV === 'production' ? '/myportfolio/' : '/',
+  server: {
+    watch: {
+      usePolling: true,
+    },
+    hmr: {
+      overlay: true,
+    },
+  },
 });

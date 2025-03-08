@@ -1,8 +1,8 @@
+@import './styles/common.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './styles/common.css';
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {

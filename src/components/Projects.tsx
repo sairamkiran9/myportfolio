@@ -2,14 +2,41 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github } from 'lucide-react';
 
+// Get the base URL from Vite
+const baseUrl = import.meta.env.BASE_URL;
+
 const projects = [
   {
+    title: "Atomic Habits Agent",
+    description: "A comprehensive habit tracking agent inspired by James Clear's 'Atomic Habits' book A comprehensive habit tracking agent with push in-app notification system",
+    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800", // TODO: Replace with local image `${baseUrl}assets/habits.jpg`
+    tech: ["NextJs", "FastAPI", "AWS", "Agentic AI", "ChromaDB"],
+    github: "https://github.com/sairamkiran9/atomic-habits-agent",
+    live: "https://github.com/sairamkiran9/atomic-habits-agent/blob/master/README.md"
+  },
+  {
     title: "CancerKG.ORG",
-    description: "A knowledge graph based search engine with 13M+ nodes.",
-    image: "assets/cancer.png",
+    description: "An AI-based knowledge graph solution for improving semantic retrieval across 13M+ heterogeneous documents.",
+    image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=800", // Knowledge graph visualization image
     tech: ["Python", "React", "MongoDB", "LLMs", "AWS"],
-    github: "https://github.com/sairamkiran9",
+    github: "https://arxiv.org/pdf/2501.00223",
     live: "http://cancerkg.org/"
+  },
+  {
+    title: "AttnGAN-trans",
+    description: "Transformer models for enhancing AttnGAN based text-to-image generation - research paper implementation.",
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800",
+    tech: ["PyTorch", "Deep Learning", "Transformers", "Computer Vision", "NLP"],
+    github: "https://github.com/sairamkiran9/AttnGAN-trans",
+    live: "https://www.sciencedirect.com/science/article/abs/pii/S026288562100189X?via%3Dihub"
+  },
+  {
+    title: "Network Emulator Java",
+    description: "An end-to-end OSI layer client to client communication simulator in Java.",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800", // TODO: Replace with local image `${baseUrl}assets/network-emulator.jpg`
+    tech: ["Java", "Networking", "OSI Model", "Socket Programming", "Multithreading"],
+    github: "https://github.com/sairamkiran9/Network-Emulator-Java",
+    live: ""
   },
   {
     title: "CookBuddy",
@@ -21,7 +48,7 @@ const projects = [
   },
   {
     title: "CredManager",
-    description: "A secure password management tool for storign and sharing passwords securely",
+    description: "A secure password management tool for storing and sharing passwords securely",
     image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800",
     tech: ["Python", "React", "Firebase", "ChromeExtension"],
     github: "https://github.com/sairamkiran9/cred-manager",
@@ -31,7 +58,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="py-20 bg-gray-900">
+    <section className="py-20 bg-gray-800">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2 
           className="text-4xl font-bold text-center text-white mb-16"
@@ -64,7 +91,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5, delay: index * 0.2 }}
-      className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow"
+      className="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow"
     >
       <div className="relative group">
         <img 

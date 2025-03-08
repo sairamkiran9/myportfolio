@@ -7,10 +7,10 @@ const experiences = [
     company: "Florida State University",
     period: "May 2024 - Present",
     description: [
-      "Led development of a React-based web applications for real-time monitoring",
-      "Automated backend API integrations slashing manual work hours by 80%",
-      "Implemented CI/CD Jenkins pipelines reducing deployment time by 50%",
-      "Mentored junior developers and conducted code reviews."
+      "Developed a monitoring platform integrating third-party services, cutting costs by $50K/year.",
+      "Automated diagnostics & work orders, reducing manual intervention by 60% and downtime by 30%.",
+      "Built AI-driven agents & forecasting, optimizing energy usage for campus sustainability.",
+      "Designed CI/CD pipelines, cutting deployment time by 50% and improving system reliability."
     ]
   },
   {
@@ -18,8 +18,9 @@ const experiences = [
     company: "Florida State University",
     period: "Dec 2022 - May 2024",
     description: [
-      "Developed and maintained multiple integration services of Assetworks and Siemens.",
-      "Optimized PostgreSQL queries usign range based partitions, improving performance by 40%"
+      "Accelerated migration by 25% via automation and API integration, saving 2 months.",
+      "Developed PowerBI dashboards with Snowflake for faster, data-driven decisions.",
+      "Built high-performance SPAs using ReactJS, Python & PostgreSQL, cutting query time to <1s."
     ]
   },
   {
@@ -27,9 +28,9 @@ const experiences = [
     company: "Amdocs",
     period: "Jul 2021 - Aug 2022",
     description: [
-      "Built responsive web pages using React, adopted custom hooks for better user experience",
-      "Optimised enterprise level microservices and built an AIOps risk management tool",
-      "Managed infrastructure ensuring high availability and performance by leveraging AWS"
+      "Developed a microservice with OPA Gatekeeper for secure image signing across AWS, GCP, and Azure.",
+      "Integrated AIOps with ML, achieving 80%+ accuracy in anomaly forecasting and downtime detection.",
+      "Optimized ReactJS and database performance, enhancing data retrieval and user interaction speed."
     ]
   },
   {
@@ -37,8 +38,8 @@ const experiences = [
     company: "ISRO",
     period: "Mar 2021 - Jul 2021",
     description: [
-      "Migrated and developed RESTful API services using Python Flask and Oracle19C",
-      "Participated in daily stand-ups and sprint planning in an agile environment"
+      "Automated API testing and schema validation, detecting 95% of schema-related failures.",
+      "Built Spark jobs for GDPR compliance, enhancing processing speed and cutting AWS costs."
     ]
   }
 ];

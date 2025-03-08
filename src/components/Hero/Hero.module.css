@@ -1,6 +1,6 @@
 /* Hero section specific styles */
 .hero-section {
-  @apply min-h-screen relative flex items-center justify-center text-white p-8 overflow-hidden z-10;
+  @apply min-h-screen relative flex items-center justify-center text-white p-8 overflow-hidden bg-transparent;
 }
 
 .hero-content {
