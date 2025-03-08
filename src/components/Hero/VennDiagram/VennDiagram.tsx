@@ -34,7 +34,7 @@ const VennDiagram = () => {
         {/* Labels */}
         <text x="200" y="120" fontFamily="sans-serif" fontSize="18" fill="white" opacity="0.9" textAnchor="middle">Full Stack</text>
         <text x="490" y="120" fontFamily="sans-serif" fontSize="18" fill="white" opacity="0.9" textAnchor="middle">AI/ML</text>
-        <text x="345" y="440" fontFamily="sans-serif" fontSize="18" fill="white" opacity="0.9" textAnchor="middle">Cloud & Systems</text>
+        <text x="345" y="440" fontFamily="sans-serif" fontSize="18" fill="white" opacity="0.9" textAnchor="middle">Cloud Infra</text>
         
         {/* Gradient Definitions */}
         <defs>
