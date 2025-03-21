@@ -12,7 +12,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800", // TODO: Replace with local image `${baseUrl}assets/habits.jpg`
     tech: ["NextJs", "FastAPI", "AWS", "Agentic AI", "ChromaDB"],
     github: "https://github.com/sairamkiran9/atomic-habits-agent",
-    live: "https://github.com/sairamkiran9/atomic-habits-agent/blob/master/README.md"
+    live: "https://atomic-habits-agent.vercel.app/"
   },
   {
     title: "CancerKG.ORG",
