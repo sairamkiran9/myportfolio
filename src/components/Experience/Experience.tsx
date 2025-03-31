@@ -5,22 +5,12 @@ const experiences = [
   {
     title: "Software Engineer",
     company: "Florida State University",
-    period: "May 2024 - Present",
+    period: "Dec 2022 - Present",
     description: [
       "Developed a monitoring platform integrating third-party services, cutting costs by $50K/year.",
       "Automated diagnostics & work orders, reducing manual intervention by 60% and downtime by 30%.",
       "Built AI-driven agents & forecasting, optimizing energy usage for campus sustainability.",
       "Designed CI/CD pipelines, cutting deployment time by 50% and improving system reliability."
-    ]
-  },
-  {
-    title: "Software Engineer Intern",
-    company: "Florida State University",
-    period: "Dec 2022 - May 2024",
-    description: [
-      "Accelerated migration by 25% via automation and API integration, saving 2 months.",
-      "Developed PowerBI dashboards with Snowflake for faster, data-driven decisions.",
-      "Built high-performance SPAs using ReactJS, Python & PostgreSQL, cutting query time to <1s."
     ]
   },
   {
@@ -34,9 +24,9 @@ const experiences = [
     ]
   },
   {
-    title: "Engineer Intern",
+    title: "Engineer",
     company: "ISRO",
-    period: "Mar 2021 - Jul 2021",
+    period: "Mar 2020 - Jul 2021",
     description: [
       "Automated API testing and schema validation, detecting 95% of schema-related failures.",
       "Built Spark jobs for GDPR compliance, enhancing processing speed and cutting AWS costs."
