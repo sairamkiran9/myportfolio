@@ -1,0 +1,33 @@
+/* Hero section specific styles */
+.hero-section {
+  @apply min-h-screen relative flex items-center justify-center text-white p-8 overflow-hidden bg-transparent;
+}
+
+.hero-content {
+  @apply max-w-6xl mx-auto relative z-20;
+}
+
+.hero-title {
+  @apply text-5xl md:text-7xl font-bold mb-6;
+}
+
+.hero-subtitle {
+  @apply text-2xl md:text-3xl text-gray-300 my-4;
+}
+
+.social-links {
+  @apply flex justify-center gap-6 mb-0;
+}
+
+.cta-button {
+  @apply px-8 py-3 bg-blue-600 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors;
+}
+
+.scroll-indicator {
+  position: absolute;
+  margin-top: 10px;
+  left: 50%;
+  transform: translateX(-50%); 
+  text-align: center;
+  cursor: pointer;
+}

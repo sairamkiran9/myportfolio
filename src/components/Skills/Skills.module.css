@@ -1,0 +1,24 @@
+/* Skills section specific styles */
+.skill-category {
+  @apply mb-8;
+}
+
+.category-title {
+  @apply text-2xl font-bold text-white mb-4;
+}
+
+.skills-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.skill-card {
+  @apply bg-gray-800 p-4 rounded-lg;
+}
+
+.progress-bar {
+  @apply h-2 bg-gray-700 rounded-full overflow-hidden;
+}
+
+.progress-fill {
+  @apply h-full transition-all duration-1000 ease-out;
+}
