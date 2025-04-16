@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 export default function Hero() {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const role = 'Full Stack AI Engineer';
+  const role = 'Software Engineer';
   
   useEffect(() => {
     if (currentIndex < role.length) {

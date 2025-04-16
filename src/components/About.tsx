@@ -6,7 +6,7 @@ export default function About() {
     {
       icon: <Terminal className="w-6 h-6" />,
       title: "Backend Development",
-      description: "Architected multiple RESTFUL API services using Python (Django, Flask) and NextJS"
+      description: "Architected multiple RESTFUL API services using Java, Spring Boot, and Node.js"
     },
     {
       icon: <Codepen className="w-6 h-6 bd-organe" />,
@@ -16,7 +16,7 @@ export default function About() {
     {
       icon: <Code2 className="w-6 h-6" />,
       title: "API Integrations",
-      description: "Skilled in integrating 3rd party services like Shopify, Stripe into distributed applciations"
+      description: "Skilled in integrating 3rd party services like Shopify, OAuth2.0 into distributed applciations"
     },
     {
       icon: <Database className="w-6 h-6" />,

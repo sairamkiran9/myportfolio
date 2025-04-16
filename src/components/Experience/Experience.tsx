@@ -3,36 +3,31 @@ import ExperienceCard from './ExperienceCard';
 
 const experiences = [
   {
+    title: "Software Development Engineer 2",
+    company: "Skyline Infrastructure",
+    period: "Jul 2022 – Present",
+    description: [
+      "Built scalable microservices for a rental platform handling 5M+ daily API requests with 99.99% uptime.",
+      "Migrated monolith to event-driven architecture, reducing system coupling by 60%.",
+      "Improved system performance with gRPC, PostgreSQL sharding, and Redis caching.",
+      "Reduced deployment time by 80% and incident response time by 75% with CI/CD and observability tools.",
+      "Tech stack: Java, Spring Boot, Kafka, Kubernetes, AWS (ECS, Fargate), Redis, gRPC, PostgreSQL, Prometheus, Grafana."
+    ]
+  },
+  {
     title: "Software Engineer",
-    company: "Florida State University",
-    period: "Dec 2022 - Present",
-    description: [
-      "Developed a monitoring platform integrating third-party services, cutting costs by $50K/year.",
-      "Automated diagnostics & work orders, reducing manual intervention by 60% and downtime by 30%.",
-      "Built AI-driven agents & forecasting, optimizing energy usage for campus sustainability.",
-      "Designed CI/CD pipelines, cutting deployment time by 50% and improving system reliability."
-    ]
-  },
-  {
-    title: "Software Developer",
     company: "Amdocs",
-    period: "Jul 2021 - Aug 2022",
+    period: "Jul 2021 – Jul 2022",
     description: [
-      "Developed a microservice with OPA Gatekeeper for secure image signing across AWS, GCP, and Azure.",
-      "Integrated AIOps with ML, achieving 80%+ accuracy in anomaly forecasting and downtime detection.",
-      "Optimized ReactJS and database performance, enhancing data retrieval and user interaction speed."
-    ]
-  },
-  {
-    title: "Engineer",
-    company: "ISRO",
-    period: "Mar 2020 - Jul 2021",
-    description: [
-      "Automated API testing and schema validation, detecting 95% of schema-related failures.",
-      "Built Spark jobs for GDPR compliance, enhancing processing speed and cutting AWS costs."
+      "Developed backend systems processing 2M+ daily transactions and automated telecom workflows.",
+      "Refactored monolith to microservices, improving release cycles and system modularity.",
+      "Built a job scheduler, automated DB migrations, and optimized SQL for faster reporting.",
+      "Enhanced code quality with 85% test coverage, TDD adoption, and CI/CD pipelines.",
+      "Tech stack: Java, Spring, Docker Swarm, RabbitMQ, ActiveMQ, Liquibase, ELK Stack, Jenkins, SQL."
     ]
   }
 ];
+
 
 export default function Experience() {
   return (
