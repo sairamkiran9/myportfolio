@@ -1,1 +1,0 @@
-// This file is now obsolete, please use the Hero component in the Hero subdirectory instead
