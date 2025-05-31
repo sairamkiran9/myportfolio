@@ -3,15 +3,14 @@ import ExperienceCard from './ExperienceCard';
 
 const experiences = [
   {
-    title: "Software Development Engineer 2",
-    company: "Skyline Infrastructure",
-    period: "Jul 2022 – Present",
+    title: "Software Engineer",
+    company: "Florida State University",
+    period: "Aug 2022 – Present",
     description: [
-      "Built scalable microservices for a rental platform handling 5M+ daily API requests with 99.99% uptime.",
-      "Migrated monolith to event-driven architecture, reducing system coupling by 60%.",
-      "Improved system performance with gRPC, PostgreSQL sharding, and Redis caching.",
-      "Reduced deployment time by 80% and incident response time by 75% with CI/CD and observability tools.",
-      "Tech stack: Java, Spring Boot, Kafka, Kubernetes, AWS (ECS, Fargate), Redis, gRPC, PostgreSQL, Prometheus, Grafana."
+      "Backend: Designed and optimized backend systems for FSU’s enterprise applications and campus-wide BAS, enabling efficient utilities management.",
+      "Microservices: Migrated monoliths to event-driven microservices using Kafka for real-time BAS event streaming (HVAC, meters) on Kubernetes clusters.",
+      "AI: Built models for energy forecasting, occupancy estimation, and predictive analytics for proactive maintenance and space optimization.",
+      "Tech Stack: Java, Spring Boot, Kafka, gRPC, Kubernetes, AWS, Redis, PostgreSQL, Prometheus, Grafana, AI/ML."
     ]
   },
   {
@@ -19,11 +18,10 @@ const experiences = [
     company: "Amdocs",
     period: "Jul 2021 – Jul 2022",
     description: [
-      "Developed backend systems processing 2M+ daily transactions and automated telecom workflows.",
-      "Refactored monolith to microservices, improving release cycles and system modularity.",
-      "Built a job scheduler, automated DB migrations, and optimized SQL for faster reporting.",
-      "Enhanced code quality with 85% test coverage, TDD adoption, and CI/CD pipelines.",
-      "Tech stack: Java, Spring, Docker Swarm, RabbitMQ, ActiveMQ, Liquibase, ELK Stack, Jenkins, SQL."
+      "Backend: Developed backend systems processing 2M+ daily transactions, automating critical telecom workflows and streamlining operations.",
+      "AIOps: Built AWS data pipelines processing 10TB of streaming data daily. Designed ML models for root cause analysis and anomaly detection, reducing downtime by 20% in PoC.",
+      "REST APIs: Integrated REST APIs to connect services, automate workflows, and enable seamless data exchange across platforms.",
+      "Tech Stack: Java, Spring, Docker Swarm, RabbitMQ, ActiveMQ, Liquibase, ELK Stack, Jenkins, SQL, AWS, ML for AIOps."
     ]
   }
 ];
