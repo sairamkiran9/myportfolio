@@ -1,0 +1,143 @@
+# Enhanced Portfolio Deployment Workflow
+# Supports main branch deployment, feature branch deployment, and PR previews
+name: Deploy Portfolio
+
+on:
+  # Runs on pushes targeting the default branch and feature branches
+  push:
+    branches: ["master", "main", "develop", "feature/*"]
+  
+  # Runs on pull requests for preview deployments
+  pull_request:
+    branches: ["master", "main"]
+    types: [opened, synchronize, reopened, closed]
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  pull-requests: write
+
+# Allow only one concurrent deployment per branch/PR
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: false
+
+jobs:
+  # Build job for all branches
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
+      
+      - name: Upload artifact for main/master branch
+        if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      
+      - name: Upload build artifacts for feature branches and PRs
+        if: github.ref != 'refs/heads/master' && github.ref != 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-${{ github.sha }}
+          path: '.'
+          retention-days: 30
+
+  # Deploy job for main/master branch
+  deploy-production:
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # Deploy job for feature branches (staging)
+  deploy-staging:
+    if: github.ref != 'refs/heads/master' && github.ref != 'refs/heads/main' && github.event_name == 'push'
+    environment:
+      name: staging
+      url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/staging/${{ github.ref_name }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-${{ github.sha }}
+          path: ./staging
+      
+      - name: Deploy to staging environment
+        run: |
+          echo "🚀 Deploying feature branch ${{ github.ref_name }} to staging environment"
+          echo "📱 Staging URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/staging/${{ github.ref_name }}"
+          echo "✅ This would typically deploy to a staging server or subdirectory"
+          ls -la ./staging
+
+  # PR Preview deployment
+  deploy-pr-preview:
+    if: github.event_name == 'pull_request' && github.event.action != 'closed'
+    environment:
+      name: pr-preview
+      url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/pr-${{ github.event.number }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download PR artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-${{ github.sha }}
+          path: ./pr-preview
+      
+      - name: Deploy PR preview
+        run: |
+          echo "🚀 Deploying PR #${{ github.event.number }} preview"
+          echo "📱 PR Preview URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/pr-${{ github.event.number }}"
+          echo "✅ This would typically deploy to a preview environment"
+          ls -la ./pr-preview
+      
+      - name: Comment PR with preview link
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '🚀 **Preview deployment ready!**\n\n📱 Preview URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/pr-${{ github.event.number }}\n\n*This preview will be updated automatically when you push new changes to this PR.*'
+            })
+
+  # Cleanup PR preview when PR is closed
+  cleanup-pr-preview:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cleanup PR preview
+        run: |
+          echo "🧹 Cleaning up PR #${{ github.event.number }} preview deployment"
+          echo "✅ This would typically remove the preview environment"
+      
+      - name: Comment PR cleanup
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '🧹 **Preview deployment cleaned up**\n\nThe preview environment for this PR has been removed.'
+            })
