@@ -52,7 +52,7 @@ export default function Hero() {
             transition={{ delay: 0.6 }}
           >
             <SocialLink href="https://github.com/sairamkiran9" icon={<Github />} />
-            <SocialLink href="https://www.linkedin.com/in/kiran-muppana/" icon={<Linkedin />} />
+            <SocialLink href="https://www.linkedin.com/in/kiranmuppana9/" icon={<Linkedin />} />
             <SocialLink href="mailto:kiranmuppana36@gmail.com" icon={<Mail />} />
           </motion.div>
           <motion.h2

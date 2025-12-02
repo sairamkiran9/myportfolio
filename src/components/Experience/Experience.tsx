@@ -7,10 +7,10 @@ const experiences = [
     company: "Florida State University",
     period: "Aug 2022 – Present",
     description: [
-      "Backend: Designed and optimized backend systems for FSU’s enterprise applications and campus-wide BAS, enabling efficient utilities management.",
-      "Microservices: Migrated monoliths to event-driven microservices using Kafka for real-time BAS event streaming (HVAC, meters) on Kubernetes clusters.",
-      "AI: Built models for energy forecasting, occupancy estimation, and predictive analytics for proactive maintenance and space optimization.",
-      "Tech Stack: Java, Spring Boot, Kafka, gRPC, Kubernetes, AWS, Redis, PostgreSQL, Prometheus, Grafana, AI/ML."
+      "Live Monitoring Dashboards: Developed real-time event streaming (HVAC, meters) and automatic workorder generation platform.",
+      "Energy Forecasting: Built models for energy forecasting, occupancy estimation, and predictive analytics for proactive maintenance and space optimization.",
+      "Implemented automations such as PPCL code generator, monthly utility consumption reports for efficient utilities management.",
+      "Tech Stack: Java, Python, Kafka, Kubernetes, AWS, Redis, PostgreSQL, Large Language Models, Agentic RAG."
     ]
   },
   {
@@ -19,7 +19,7 @@ const experiences = [
     period: "Jul 2021 – Jul 2022",
     description: [
       "Backend: Developed backend systems processing 2M+ daily transactions, automating critical telecom workflows and streamlining operations.",
-      "AIOps: Built AWS data pipelines processing 10TB of streaming data daily. Designed ML models for root cause analysis and anomaly detection, reducing downtime by 20% in PoC.",
+      "AIOps: Designed ML models for root cause analysis and anomaly detection, reducing downtime by 20% in PoC.",
       "REST APIs: Integrated REST APIs to connect services, automate workflows, and enable seamless data exchange across platforms.",
       "Tech Stack: Java, Spring, Docker Swarm, RabbitMQ, ActiveMQ, Liquibase, ELK Stack, Jenkins, SQL, AWS, ML for AIOps."
     ]
